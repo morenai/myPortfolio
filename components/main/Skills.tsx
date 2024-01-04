@@ -1,7 +1,9 @@
-import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from '@/constants'
+import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data,  } from '@/constants'
 import React from 'react'
 import SkillDataProvider from '../sub/SkillDataProvider'
 import SkillText from '../sub/SkillText'
+
+import { v4 as uuidv4 } from 'uuid';
 
 const Skills = () => {
   return (
@@ -14,7 +16,8 @@ const Skills = () => {
 
       <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
         {Frontend_skill.map((image, index) => (
-          <SkillDataProvider 
+          <SkillDataProvider
+            key={uuidv4()} 
             src={image.Image} 
             width={image.width}
             height={image.height} 
@@ -23,7 +26,8 @@ const Skills = () => {
       </div>
       <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
         {Backend_skill.map((image, index) => (
-          <SkillDataProvider 
+          <SkillDataProvider
+            key={uuidv4()}
             src={image.Image} 
             width={image.width}
             height={image.height} 
@@ -33,6 +37,7 @@ const Skills = () => {
       <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
         {Full_stack.map((image, index) => (
           <SkillDataProvider 
+            key={uuidv4()}
             src={image.Image} 
             width={image.width} 
             height={image.height} 
@@ -41,7 +46,8 @@ const Skills = () => {
       </div>
       <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
         {Other_skill.map((image, index) => (
-          <SkillDataProvider 
+          <SkillDataProvider
+            key={uuidv4()}
             src={image.Image} 
             width={image.width} 
             height={image.height} 
