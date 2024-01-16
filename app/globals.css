@@ -69,3 +69,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+.boxy:hover {
+  box-shadow: 0 0 10px rgba(42, 94, 88, 0.959),0 0 15px rgba(58, 155, 161, 0.959),0 0 10px rgba(218, 209, 209, 0.959),0 0 10px rgba(218, 209, 209, 0.959);
+}
+.box:hover {
+  transform: scale(1.20);
+  opacity: calc( 0.90 - ( ( 100 - 85 ) * 0.01 ) );
+  transition: all 0.3s ease-in-out;
+  transition-duration: 0.7s;
+  
+}

@@ -2,6 +2,8 @@ import { Socials } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
+
+
 const Navbar = () => {
   return (
     <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2a0e61]/50 bg-[#03001417] backdrop-blur-md
@@ -31,15 +33,22 @@ const Navbar = () => {
     </div>
     
     <div className='flex flex-row gap-5 cursor-pointer'>
-      {Socials.map((social) => (
+      <a href='https://github.com/morenai'>
         <Image
-          src={social.src}
-          alt={social.name}
-          key={social.name}
-          width={24}
-          height={24}
+          src="/gitwhite.png"
+          alt="github"
+          width={30}
+          height={30}
         />
-      ))}
+      </a>
+      <a href='https://github.com/morenai'>
+        <Image
+          src="/linked.png"
+          alt="github"
+          width={30}
+          height={30}
+        />
+      </a>
     </div>
       </div>
     </div>

@@ -27,12 +27,12 @@ const StarBackground = (props: any) => {
         frustumCulled
         {...props}
         >
-          <PointMaterial
-              transparent
-              color="$fff"
-              size={0.002}
-              sizeAttenuation={true}
-              dethWrite={false}
+            <PointMaterial
+                transparent
+                color="$fff"
+                size={0.002}
+                sizeAttenuation={true}
+                dethWrite={false}
             />
         </Points>
     </group>
@@ -40,10 +40,10 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed z-[-1] inset-0">
+    <div className="w-full h-auto fixed inset-0 z-[-1]">
         <Canvas camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
-          <StarBackground />
+            <StarBackground />
         </Suspense>
         </Canvas>
     </div>

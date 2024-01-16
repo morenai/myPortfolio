@@ -1,7 +1,7 @@
 import React   from 'react'
 import Hero from '../components/main/Hero'
 import Skills from '@/components/main/Skills'
-import Encryption from '@/components/main/Encryption'
+// import Encryption from '@/components/main/Encryption'
 import Projects from '@/components/main/Projects'
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <div className='flex flex-col gap-20'>
         <Hero /> 
         <Skills />
-        <Encryption />
+        {/* <Encryption /> */}
         <Projects />
       </div>
     </main>
